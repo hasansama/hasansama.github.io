@@ -40,12 +40,11 @@ function drawHighChartGraph(dayArray, lineArray) {
                 zoomType: 'x'
             },
             title: {
-                text: 'Istanbul Ili Barajlardaki Su Oranlari'
+                text: 'İstanbul İli Baraj Doluluk Oranları'
             },
             subtitle: {
                 text: document.ontouchstart === undefined ?
-                    'Click and drag in the plot area to zoom in' :
-                    'Pinch the chart to zoom in'
+			'Veriler iski.gov.tr adresinden günlük olarak alınıp arşivlenmiştir.'
             },
             xAxis: {
 	           categories:  dayArray
