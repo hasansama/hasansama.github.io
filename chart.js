@@ -43,7 +43,7 @@ function drawHighChartGraph(dayArray, lineArray) {
             },
             subtitle: {
                 text: document.ontouchstart === undefined ?
-			'Veriler iski.gov.tr adresinden günlük olarak alınıp arşivlenmiştir.'
+			'Veriler iski.gov.tr adresinden günlük olarak alınıp arşivlenmiştir.' : ''
             },
             xAxis: {
 	           categories:  dayArray
