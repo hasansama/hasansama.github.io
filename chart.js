@@ -9,7 +9,7 @@ function getThreholds() {
     var result = null;
     $.ajax({
         type: "GET",
-        url: "thresholds.txt",
+        url: "http://hasansama.com/barajdoluluk/thresholds.txt",
         dataType: "text",
         success: function(data) {
             parseThresholds(data);
