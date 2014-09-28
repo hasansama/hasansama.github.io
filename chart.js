@@ -30,7 +30,6 @@ function parseThresholds(thresholds) {
             thresholdArray.push( parseFloat(daily[1]));
         }
     }
-//    drawGraph(dayArray, thresholdArray);
     drawHighChartGraph(dayArray, thresholdArray);
 }
 
@@ -85,30 +84,4 @@ function drawHighChartGraph(dayArray, lineArray) {
                 data: lineArray
             }]
         });
-}
-
-
-function drawGraph(dayArray, lineArray) {
-
-    var lineChartData = {
-        labels: dayArray,
-        datasets: [
-            {
-                fillColor: "rgba(151,187,205,0.5)",
-                strokeColor: "rgba(151,187,205,1)",
-                pointColor: "rgba(151,187,205,1)",
-                pointStrokeColor: "#fff",
-                data: lineArray
-            }
-        ]
-    },
-    lineOptions = {
-        pointDotRadius: 2,
-        bezierCurve : false,
-        pointDotStrokeWidth : 0.5,
-    };
-
-    var myLine = new Chart(document.getElementById("myChart").getContext("2d")).Line(lineChartData, lineOptions);
-
-
 }
